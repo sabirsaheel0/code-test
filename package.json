@@ -1,0 +1,13 @@
+{
+  "name": "ball-press",
+  "version": "1.0.0",
+  "description": "Tiny real-time Ball Press web app for EC2.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
