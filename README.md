@@ -1,6 +1,6 @@
 # Ball Press
 
-A tiny real-time web app with a lock/unlock selector and six round ball buttons. Open it on two phones and button presses update live on both screens.
+A tiny real-time web app with a lock/unlock selector and six round ball buttons numbered 0 through 5. Open it on two phones and button presses update live on both screens.
 
 ## Run locally
 
@@ -35,4 +35,4 @@ Open <http://localhost>.
    ```
 6. Open `http://YOUR_EC2_PUBLIC_IP` on both phones.
 
-The app uses Server-Sent Events for live updates and keeps the current state in memory. Restarting the server resets the selected buttons.
+The app uses Server-Sent Events for live updates and keeps the current state in memory. Restarting the server resets the selected buttons to Unlock and 0.

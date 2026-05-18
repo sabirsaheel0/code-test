@@ -6,8 +6,8 @@ const PORT = Number(process.env.PORT || 3000);
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
 let state = {
-  mode: null,
-  ball: null,
+  mode: 'unlock',
+  ball: 0,
 };
 
 const clients = new Set();
@@ -43,8 +43,8 @@ function updateState(next) {
 
   if (next.ball !== undefined) {
     const ball = Number(next.ball);
-    if (!Number.isInteger(ball) || ball < 1 || ball > 6) {
-      throw new Error('ball must be an integer from 1 to 6');
+    if (!Number.isInteger(ball) || ball < 0 || ball > 5) {
+      throw new Error('ball must be an integer from 0 to 5');
     }
     state.ball = ball;
   }

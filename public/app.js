@@ -1,7 +1,7 @@
 const modeButtons = document.querySelectorAll('[data-mode]');
 const ballButtons = document.querySelectorAll('[data-ball]');
 
-let state = { mode: null, ball: null };
+let state = { mode: 'unlock', ball: 0 };
 
 function render(nextState) {
   state = nextState;

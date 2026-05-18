@@ -88,7 +88,7 @@ h1 {
   outline-offset: 0.35rem;
 }
 
-.mode-button.is-active {
+.mode-button[data-mode="lock"].is-active {
   color: #ffdada;
   border-color: var(--red);
   background:
@@ -100,6 +100,7 @@ h1 {
     inset 0 0 3.1rem rgba(255, 70, 70, 0.18);
 }
 
+.mode-button[data-mode="unlock"].is-active,
 .ball-button.is-active {
   color: var(--green);
   border-color: var(--green);
