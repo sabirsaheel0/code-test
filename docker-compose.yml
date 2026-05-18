@@ -1,0 +1,7 @@
+services:
+  ball-press:
+    build: .
+    container_name: ball-press
+    restart: unless-stopped
+    ports:
+      - "80:3000"
